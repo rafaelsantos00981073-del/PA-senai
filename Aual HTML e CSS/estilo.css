@@ -1,0 +1,36 @@
+/* h1{
+    color: blue;
+} */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.cor-azul{
+    color: blue;
+    background-color: cyan;
+    font-family: "Segoe UI", Tahoma, 'Segoe UI', Tahoma, Geneva, sans-serif ;
+}
+.quadrado{
+    background-color: rgb(21, 128, 0);
+    color: white;
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px 10px 0px;
+    padding: 5px 0px 0px 0px;
+}
+
+.quadrador{
+    background-color: rgb(70, 0, 128);
+    color: white;
+    height: 150px;
+    width: 150px;
+}
+
+.alinhamento{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    height: 100vh;
+
+}
+
