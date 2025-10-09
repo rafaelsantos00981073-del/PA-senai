@@ -1,0 +1,98 @@
+/* h1{
+    color: blue;
+} */
+
+/* .cor-azul{
+    color: blue;
+    background-color: cyan;
+    font-family: "Segoe UI", Tahoma, 'Segoe UI', Tahoma, Geneva, sans-serif ;
+}
+.quadrado{
+    background-color: rgb(21, 128, 0);
+    color: white;
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px 10px 0px;
+    padding: 5px 0px 0px 0px;
+}
+
+.quadrador{
+    background-color: rgb(70, 0, 128);
+    color: white;
+    height: 150px;
+    width: 150px;
+}
+
+.alinhamento{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: 100vh;
+
+} */ */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    height: 100vh;
+}
+.qdr-azul{
+    background-color: blue;
+    height: 150px;
+    width: 150px;
+}
+.linha-1{
+    display: flex;
+    
+    justify-content: space-between;
+}
+.linha-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.linha-3{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.linha{
+    height: 33.3333333%;
+}
+.qdr-laranja{
+    background-color: orange;
+    height: 50px;
+    width: 50px;
+}
+.q1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.metade{
+    height: 50%;
+}
+.flex{
+    display: flex;
+}
+.alinha-meio{
+    justify-content: center;
+}
+.alinha-coluna{
+    align-items: end;
+}
+.ameio{
+    align-items: center;
+}
+.jinicio{
+    justify-content: flex-start;
+}
+.jfinal{
+    justify-content: end;
+}
+
