@@ -96,3 +96,10 @@
     justify-content: end;
 }
 
+.um-terco{
+    height: 33.3333333%;
+}
+.bet{
+    justify-content: space-between;
+}
+
