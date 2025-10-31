@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    height: 100vh;
+}
+
+.branco{
+    height: 85%;
+    width: 75%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 19px;
+    box-shadow: rgba(90, 44, 44, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f{
+    font-family: OCR A Std, monospace;
+    text-align: center;
+}
+.espaco{
+    margin: 10px;
+    padding: 10px;
+}
+.bet{
+
+}
+.flex{
+    display: flex;
+
+}
+.metade{
+    height: 50%;
+}
+.af{
+    align-items: end;
+}
+.verde{
+    width: 30%;
+    height: 100%;
+    background-color: rgb(0, 255, 157);
+    border-radius: 19px 19px 19px 19px;
+    display: flex;
+    flex-direction: column;
+}
+
+.center-final{
+    align-items: end;
+    justify-content: center;
+}
+.tre{
+    height: 33,33333333%;
+}
+.centroo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bt{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 255, 157);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3;
+}
+.h{
+    display: flex;
+    flex-direction: column;
+}
+hh{
+    padding: 30px;
+}
+jc{
+    justify-content: end;
+}
+.q3{
+    height: 85%;
+    width: 75%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 19px;
+    box-shadow: rgba(90, 44, 44, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.q-branco{
+    width: 70%;
+    height: 100%;
+}
+
+.m-texto{
+    margin: 70px;
+}
+.just-center{
+    justify-content: center;
+}
