@@ -20,7 +20,7 @@
           <h4 class="flex centroo">Não tem conta ainda?</h4>
           <div class="flex centroo">
             <!-- LINK PARA CADASTRO -->
-            <a href="cadastro.html"><button class="bt">Cadastrar</button></a>
+            <a href="index.html"><button class="bt">Cadastrar</button></a>
           </div>
         </div>
       </div>
@@ -35,7 +35,7 @@
           <button type="submit" class="bt-verde">Entrar</button>
         </form>
 
-        <p class="login-texto">Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+        <p class="login-texto">Não tem conta? <a href="index.html">Cadastre-se</a></p>
       </div>
     </div>
   </div>
@@ -49,15 +49,16 @@
       const emailLogin = document.getElementById('emailLogin').value;
       const senhaLogin = document.getElementById('senhaLogin').value;
 
-      const usuarioSalvo = JSON.parse(localStorage.getItem('usuario'));
+      let usuarioSalvo = localStorage.getItem(emailLogin);
+      console.log(usuarioSalvo)
 
       if (!usuarioSalvo) {
         alert('Nenhum usuário cadastrado. Faça o cadastro primeiro.');
-        window.location.href = 'cadastro.html';
+        window.location.href = 'index.html';
         return;
       }
 
-      if (emailLogin === usuarioSalvo.email && senhaLogin === usuarioSalvo.senha) {
+      if (emailLogin && senhaLogin === usuarioSalvo) {
         alert(`✅ Bem-vindo, ${usuarioSalvo.nome}!`);
         window.location.href = 'index.html';
       } else {
