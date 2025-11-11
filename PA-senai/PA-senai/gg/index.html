@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar</title>
+  <link rel="stylesheet" href="./estilo.css">
+</head>
+
+<body>
+  <div class="container centro flex">
+    <div class="branco flex centro">
+      <!-- LADO VERDE -->
+      <div class="verde flex">
+        <div class="metade flex centro">
+          <h3 class="espaco">Bem-vindo ao Site</h3>
+        </div>
+        <div class="metade flex h">
+          <h4 class="flex centroo">Já tem uma conta?</h4>
+          <div class="flex centroo">
+            <a href="login.html"><button class="bt">Entrar</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- LADO BRANCO - CADASTRO -->
+      <div class="q-branco flex just-center h">
+        <h1 class="m-texto ji">Criar Conta</h1>
+
+        <form id="formCadastro" class="form flex h centroo">
+          <input type="text" id="nome" placeholder="Nome completo" required>
+          <input type="email" id="email" placeholder="Email" required>
+          <input type="password" id="senha" placeholder="Senha" required>
+          <input type="password" id="confirmar-senha" placeholder="Confirmar Senha" required>
+          <button type="submit" class="bt-verde">Cadastrar</button>
+        </form>
+
+        <p class="login-texto">Já possui conta? <a href="login.html">Entre aqui</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('formCadastro');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const nome = document.getElementById('nome').value;
+      const email = document.getElementById('email').value;
+      const senha = document.getElementById('senha').value;
+      const confirmarSenha = document.getElementById('confirmar-senha').value;
+
+      if (nome && email && senha && senha === confirmarSenha) {
+        localStorage.setItem(email,senha);
+
+        alert('✅ Cadastro realizado com sucesso! Você será redirecionado para o login.');
+        window.location.href = 'login.html';
+      } else {
+        alert('Por favor, preencha todos os campos!');
+      }
+    });
+  </script>
+</body>
+
+</html>
