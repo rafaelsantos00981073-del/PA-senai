@@ -1,0 +1,187 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #e8fdf5;
+  }
+  
+  /* CONTAINER PRINCIPAL */
+  .container {
+    height: 100vh;
+  }
+  
+  /* BLOCO PRINCIPAL */
+  .branco {
+    height: 75%;
+    width: 50%;
+    background-color: white;
+    border-radius: 19px;
+    box-shadow: rgba(90, 44, 44, 0.3) 0px 1px 2px 0px,
+                rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    overflow: hidden;
+    display: flex;
+    gap: 0; /* remove qualquer espaço entre verde e branco */
+  }
+  
+  /* CLASSES GENÉRICAS */
+  .flex {
+    display: flex;
+  }
+  
+  .centro {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .h {
+    flex-direction: column;
+  }
+  
+  .just-center {
+    justify-content: center;
+  }
+  
+  .centroo {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  /* LADO VERDE */
+  .verde {
+    width: 30%;
+    height: 100%;
+    background-color: rgb(0, 255, 157);
+    color: white;
+    border-radius: 19px 0 0 19px;  /* borda arredondada só à esquerda */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-right: 0; /* encosta na parte branca */
+  }
+  
+  .verde h3,
+  .verde h4 {
+    margin: 4px 0;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  .verde .bt {
+    margin-top: 8px;
+  }
+  
+  /* LADO BRANCO */
+  .q-branco {
+    width: 70%;
+    height: 100%;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 0 19px 19px 0; /* canto direito arredondado */
+    margin-left: 0; /* sem espaço entre verde e branco */
+  }
+  
+  /* BOTÕES */
+  .bt, .bt-verde {
+    padding: 12px 35px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .bt {
+    background-color: white;
+    color: rgb(0, 255, 157);
+  }
+  
+  .bt:hover {
+    background-color: #fffafa;
+    transform: scale(1.05);
+  }
+  
+  .bt-verde {
+    background-color: rgb(0, 255, 157);
+    color: white;
+  }
+  
+  .bt-verde:hover {
+    background-color: rgb(0, 230, 140);
+    transform: scale(1.05);
+  }
+  
+  /* TÍTULOS E TEXTOS */
+  .m-texto {
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  .texto-intro {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  /* FORMULÁRIO */
+  .form {
+    width: 80%;
+    gap: 15px;
+  }
+  
+  .form input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 15px;
+    transition: 0.2s;
+  }
+
+  .input{
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 15px;
+    transition: 0.2s;
+  }
+  
+  .form input:focus {
+    border-color: rgb(0, 255, 157);
+    box-shadow: 0px 0px 4px rgba(0, 255, 157, 0.3);
+  }
+  
+  /* TEXTO FINAL */
+  .login-texto {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .login-texto a {
+    color: rgb(0, 200, 140);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .login-texto a:hover {
+    text-decoration: underline;
+  }
+  
+  .link-bt {
+    text-decoration: none;
+    text-align: center;
+    width: fit-content;
+  }
+
